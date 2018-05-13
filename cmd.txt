@@ -1,0 +1,76 @@
+//install yarn
+npm instal -g yarn
+
+//run public server
+live-server public
+
+
+//watch with babel directory
+babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+
+
+//install dependency
+yarn add webpack@3.1.0
+
+//running with watch
+npm run test -- --watch
+
+
+
+
+
+
+//sites
+https://necolas.github.io/normalize.css/
+
+https://sass-lang.com/
+http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+https://babeljs.io/
+
+
+/* SSH setup for git hub */
+
+// checking rsa
+ls -a ~/.ssh
+
+// generating public/private keys
+ssh-keygen -t rsa -b 4096 -C "my@email.com"
+
+// check if ssh agent is running
+eval "$(ssh-agent -s)"
+
+// provide path to private key
+ssh-add ~/.ssh/id_rsa
+
+// copy rsa public key to clipboard
+clip < ~/.ssh/id_rsa.pub
+
+// ssh check for git hub
+ssh -T git@github.com
+
+// run express server
+node server/server.js
+
+/***** HEROKU ******/
+
+//login
+heroku login
+
+//create app
+heroku create react-course-2-expensify
+
+//updating
+git push heroku master
+
+//open live url for heroku
+heroku open
+
+//heroku logs
+heroku logs
+
+//heroku config
+
+
+//firebase
+firebase.google.com
